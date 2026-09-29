@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donor Connector</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Fallback guidance if index.html is opened directly by double-clicking the file in file explorer -->
+  <script>
+    if (window.location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var root = document.getElementById('root');
+        if (root) {
+          root.innerHTML = '<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 620px; margin: 40px auto; padding: 32px; background: #18191f; color: #fff; border-radius: 16px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 12px 30px rgba(0,0,0,0.5); text-align: center;">' +
+            '<div style="font-size: 54px; margin-bottom: 16px;">🩸</div>' +
+            '<h2 style="color: #e63946; margin: 0 0 12px 0; font-size: 26px;">Blood Donor Connector</h2>' +
+            '<div style="background: rgba(230, 57, 70, 0.1); border: 1px solid rgba(230, 57, 70, 0.3); border-radius: 8px; padding: 12px; margin-bottom: 20px; color: #ffb4b4; font-size: 15px;">' +
+            '⚠️ This app cannot run by directly double-clicking <b>index.html</b>.' +
+            '</div>' +
+            '<p style="color: #ccc; font-size: 15px; line-height: 1.6; margin-bottom: 24px; text-align: left;">' +
+            'Modern React applications require a running development server to compile and serve components. To open and use the application:' +
+            '</p>' +
+            '<div style="background: rgba(255,255,255,0.06); padding: 16px; border-radius: 10px; text-align: left; margin-bottom: 24px;">' +
+            '<p style="margin: 0 0 10px 0; font-weight: bold; color: #fff;">👉 Recommended (One Click):</p>' +
+            '<p style="margin: 0 0 16px 12px; color: #ddd;">Double-click <b>start.bat</b> in this folder.</p>' +
+            '<p style="margin: 0 0 10px 0; font-weight: bold; color: #fff;">👉 Terminal Option:</p>' +
+            '<p style="margin: 0 0 0 12px; color: #ddd;">Open terminal in this folder and run: <br/><code style="display:inline-block; margin-top:6px; background:#000; color:#4ade80; padding:6px 12px; border-radius:6px; font-family:monospace;">npm run dev</code></p>' +
+            '</div>' +
+            '<p style="color: #888; font-size: 13px; margin: 0;">The application will open automatically in your browser at <b style="color: #e63946;">http://localhost:5173</b>.</p>' +
+            '</div>';
+          document.body.style.background = '#0e0f12';
+        }
+      });
+    }
+  </script>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
